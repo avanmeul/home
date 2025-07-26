@@ -1,11 +1,8 @@
 <!--
 project:  home page
-release notes:  25 July 2025 Friday
+release notes:  26 July 2025 Saturday
 changes:
-1) added tab icon
-2) added Scorpio image
-3) created basic framework
-4) created test section (currently used for testing XML)
+1) refactoring/cleanup
 -->
 
 <!--
@@ -21,7 +18,8 @@ to do (not necessarily in order):
         <meta name="description" content="This is the Home page of André van Meulebrouck">
         <meta name="keywords" content="Haskell, music, programming, Javascript, music notation">
         <meta name="author" content="André van Meulebrouck">
-        <title>Home Page of André van Meulebrouck</title>
+        <!-- <title>Home Page of André van Meulebrouck</title> -->
+        <title>Home</title>
         <link rel="shortcut icon" href="images/Scorpio.ico">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
@@ -33,7 +31,7 @@ to do (not necessarily in order):
                 <img src="images/Scorpio.png" alt="Scorpio plot" />
                 <figcaption>
                     <h2>Scorpio plot</h2>
-                    <p>This is a Potts Spins type 2 Julia set plot of an equation in the complex plane from my Haskell plotting program.</p></figcaption>
+                    <p>This is a Potts Spins model 2 Julia set plot of an iterated equation in the complex plane from my Haskell plotting program.</p></figcaption>
             </figure>
         </header>
 
@@ -95,10 +93,14 @@ to do (not necessarily in order):
                     <li>You won't know that I missed your intended text.</li>
                 </ol>
 
-                <p>Incidentally, I don't like phones because I think cell phones cause cancer, and give people a way to disturb you on their schedule rather than yours.</p>
+                <p>Incidentally, I don't like cell phones because I think cell phones cause cancer, 
+                    and give people a way to disturb you on their schedule rather than yours.</p>
 
-                <p>Also, my landline gets so many "Spam Risk" callers (showing up in the caller ID) that it's not worth the effort to attempt to answer the phone 
-                    (even if we are in earshot!) if we don't now who you are (and/or we were not expecting you to call).</p>
+                <p>Also, my landline gets so many "Spam Risk" callers (showing up in the caller ID) 
+                    that it's not worth the effort to attempt to answer the phone (even if we are in earshot!) 
+                    if we don't now who you are (and/or we were not expecting a call from you).</p>
+
+                <p>I have a cell phone; but it's typically for emergency outgoing calls (and similar), and it is left turned off otherwise (to avoid radiation).</p>
 
                 <p>go to:</p>
                 <nav>
@@ -182,6 +184,8 @@ to do (not necessarily in order):
                 </p>
                 <h3>organizers</h3>
                 <p>This section is for GHS '76 contacts and home reunion organizers.</p>
+                <h4>News as of 26 July 2026 Saturday</h4>
+                <p>I've exported XML from Excel and I'm using it to populate a classmates table.</p>
                 <p>go to:</p>
                 <nav>
                     <ul>
@@ -228,6 +232,11 @@ to do (not necessarily in order):
     </classmate>
 </xml>
                 </textarea>
+                <details>
+                    <summary>XML data behind table</summary>
+                    <p>this will become a text area for XML, along with associated buttons</p>
+                    <button>test button</button>
+                </details>
                 <div class="cssFlexAcross">
                     <button onclick="refreshClassmatesRaw()">refresh (raw)</button>
                     <button onclick="refreshClassmatesSerialized()">refresh (parsed)</button>
@@ -300,7 +309,7 @@ to do (not necessarily in order):
 
         </footer>
 
-        <script src="script/javascript.js" defer></script>
+        <script src="scripts/javascript.js" defer></script>
 
     </body>
 </html>
