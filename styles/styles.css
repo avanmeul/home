@@ -1,0 +1,21 @@
+.cssFlexAcross {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: left; */
+}
+
+.cssFlexDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+figure {
+    display: flex;
+    flex-flow: row;
+}
+
+figcaption {
+    align-content: center;
+    padding: 1%;
+}

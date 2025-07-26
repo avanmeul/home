@@ -1,85 +1,175 @@
+<!--
+release notes:  25 July 2025 Friday
+changes:
+1) added tab icon
+2) added Scorpio image
+3) created basic framework
+4) created test section (currently used for testing XML)
+-->
+
+<!--
+to do (not necessarily in order):
+1) use vector fractal for icon or get a square sized .ico of the Scorpio complex plane plot
+-->
+
 <!DOCTYPE html>
-<html lang="end">
+<html lang="en">
     <head>
-        <title>this is the home page of André van Meulebrouck</title>
-        <style>
-            table, td, th {
-                text-align: left;
-                border: 1px solid black;
-            }
-        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the Home page of André van Meulebrouck">
+        <meta name="keywords" content="Haskell, music notation">
+        <meta name="author" content="André van Meulebrouck">
+        <title>Home Page of André van Meulebrouck</title>
+        <link rel="shortcut icon" href="images/Scorpio.ico">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <h1>This is the home page of André van Meulebrouck</h1>
-
-        <p>Currently this page is being used to test content for another website; but content for this website will be added soon.
+        <header id="secHeader">
+            <h1>This is the home page of André van Meulebrouck.</h1>
+            <figure>
+                <img src="images/Scorpio.png" alt="Scorpio plot" />
+                <figcaption>
+                    <h2>Scorpio plot</h2>
+                    <p>This is Potts Spins type 2 Julia set plot of an equation in the complex plane.</p></figcaption>
+            </figure>
+        </header>
+        <main>
             
-        </p>
-        <h2>GHS '76, 50 year reunion</h2>
-        <p>
-            The 50 year reunion will be in (or near) Golden, Colorado on August 28, 29 of 2026 (last weekend of August).
-        </p>
-        <p>Below is the proposed itinerary.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>date</th>
-                    <th>day</th>
-                    <th>time</th>
-                    <th>event</th>
-                    <th>activities</th>
-                    <th>venue</th>
-                    <th>cost</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>28 August 2026</td>
-                    <td>Friday</td>
-                    <td>5 p.m.</td>
-                    <td>Happy Hour</td>
-                    <td>meet and get reacquainted</td>
-                    <td>TBD</td>
-                    <td>free admission, possible cash bar</td>
-                </tr>
-                <tr>
-                    <td>29 August 2026</td>
-                    <td>Saturday</td>
-                    <td>3 p.m.</td>
-                    <td>GHS courtyard</td>
-                    <td>tour of the new GHS campus and possible slide show of memories in the cafeteria</td>
-                    <td>Golden High School</td>
-                    <td>free</td>
-                </tr>
-                <tr>
-                    <td>29 August 2026</td>
-                    <td>Saturday</td>
-                    <td>5 p.m.</td>
-                    <td>dinner</td>
-                    <td>meet for dinner and possibly dancing</td>
-                    <td>TBD</td>
-                    <td>estimated at $50/person</td>
-                </tr>                
-                <tr>
-                    <td>30 August 2026</td>
-                    <td>Sunday</td>                    
-                    <td>TBD, various</td>
-                    <td>sightseeing</td>
-                    <td>optional family friendly sightseeing trips</td>
-                    <td>sites of Golden</td>
-                    <td>cost of attraction (some free)</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Please RSVP so we can determine the number of people to plan for.</p>
-        <p></p>
-        <p>There are two ways to RSVP</p>
-        <ol>
-            <li>contact one of the organizers (Debbie, Mary, Kurt, André)</li>
-            <li>RSVP on Classmates.com</li>
-        </ol>
-        <p></p>
-        <p>Please RSVP even if you don't plan to attend so that we know you were at least notified of the event.</p>
-        <p>Hope to see you there!</p>
+            <section id="secToC"></section>
+            <h2>Table of Contents</h2>
+                <nav>
+                    <ol><li><a href="#secContact">Contact</a></li>
+                        <li><a href="#secMusic">Music</a></li>
+                        <li><a href="#secOrigami">Origami</a></li>
+                        <li><a href="#secTechnology">Technology</a></li>
+                        <li><a href="#secGHS76">GHS '76</a></li>
+                        <li><a href="#secTest">Test</a></li>
+                    </ol>
+                </nav>
+            <section id="secContact">
+                <h2>Contact</h2>
+
+                <h3>Email</h3>
+
+                <nav><ul>
+                    <li><a href="mailto:vanmeule@roadrunner.com">vanmeule@roadrunner.com</a>
+                        <p>checked often</p></li>
+                    <li><a href="mailto:Andre.vanMeulebrouck@gmail.com">Andre.vanMeulebrouck@gmail.com</a>
+                        <p>more reliable</p></li>
+                </ul></nav>
+
+                <h3>Phone</h3>
+                
+                <p>Note:  my home phone (not provided here) is 
+                    <strong><em>not</em></strong> capable of receiving text messages; 
+                    and attempts to text to it will not be informed of this fact!</p>
+                
+                <p>In other words:  if you <em>attempt</em> to text me:</p>
+
+                <ol>
+                    <li>I won't get your intended text.</li>
+                    <li>I won't know that I missed your intended text.</li>
+                    <li>You won't know that I missed your intended text.</li>
+                </ol>
+
+                <p>Incidentally, I don't like phones because I think cell phones cause cancer, and give people a way to disturb you on their schedule rather than yours.</p>
+
+                <p>Also, my landline gets so many "Spam Risk" callers (showing up in the caller ID) that it's not worth the effort to attempt to answer the phone 
+                    (even if we are in earshot!) if we don't now who you are (and/or we were not expecting you to call).</p>
+
+                <p>Go back to Table of Contents</p>
+                <a href="#secToC">back to Table of Contents</a>
+                <p>Go back to Home</p>
+                <a href="#secHeader">back to Home</a>
+            </section>
+            <section id="secMusic">
+                <h2>Music</h2>
+            </section>
+
+            <section id="secOrigami">
+                <h2>Origami</h2>
+            </section>
+
+            <section id="secTechnology">
+                <h2>Technology</h2>
+            </section>
+
+            <section id="secGHS76">
+                <h2>GHS '76</h2>
+                <p>GHS (Golden High School) class of 1976 (a.k.a. GHS '76) now has a webpage: 
+                    <a href="https://avanmeul.github.io/GHS76/">GHS '76</a>.
+                </p>
+            </section> 
+
+            <section id="secTest">
+                <h2>Test</h2>
+                <p>This section is for testing (i.e. HTML + Javascript + CSS + XML, security, etc.).</p>
+                <p>test:  textarea => XML => textarea</p>
+                <textarea id="txtClassmates">
+<xml>
+    <!--key is spreadsheet row number - 1 (for John Doe) - 1 (for column captions) when sorted by last + first + middle -->
+    <key>469</key>
+    <last>Stewart</last>
+    <first>Mary</first>
+    <short></short>
+    <middle></middle>
+    <nee>Webster</nee>
+    <prefix></prefix>
+    <suffix></suffix>
+    <contactable>1</contactable>
+</xml>
+                </textarea>
+                <div class="cssFlexAcross">
+                    <button onclick="refreshClassmatesRaw()">refresh (raw)</button>
+                    <button onclick="refreshClassmates()">refresh (parsed)</button>
+                </div>
+                
+                <div class="cssFlexDown">
+                    <div>
+                        <p>transcript</p>
+                        <br>
+                        <textarea id="txtTranscript"></textarea>
+                    </div>
+                    
+                    <textarea id="txtClassmatesModified"></textarea>
+                </div>
+
+            </section>
+
+        </main>
+        <footer id="secWebsite">
+
+            <h2>About this Website</h2>
+
+            <h3>Browser compatbility</h3>
+
+            <p>This website <em>requires</em> a modern browser that supports HTML5 + CSS 3 + ECMAScript 6 (ES6).  Chrome is recommended.</p>
+        
+            <p>No attempt is made to support downlevel browsers; because doing so would add complexity, and come at the expense of those using modern browsers.</p>
+
+            <h3>Tools used</h3>
+
+            <p>This (static) website is powered by GitHub Pages; which is free, free of ads, and has no strings attached (no attempts to upsell you).</p>
+            <p>It was coded using (free) Visual Studio Code.</p>
+            <p>The <a href="https://github.com/avanmeul/home" target="_blank">Github Repository</a> for this project is public.<p></p>
+
+            <p>Here are the validators used:</p>
+
+            <ol>
+                <li><a href="https://validator.w3.org/" target="_blank">HTML validator</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+                <li><a href="https://www.w3schools.com/xml/xml_validator.asp" target="_blank">XML validator</a></li>
+            </ol>
+
+            <p>Soli Deo gloria</p>
+            
+            <a href="#secToC">go back to Table of Contents</a>
+
+        </footer>
+
+        <script src="script/javascript.js" defer>
+        </script>
+
     </body>
 </html>
