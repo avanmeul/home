@@ -1,8 +1,10 @@
 <!--
 project:  home page
-release notes:  27 July 2025 Saturday
+release notes:  9 August 2025
 changes:
-1) refactoring/cleanup
+1) content updates
+2) go home link uses "#" (it works!)
+3) SVG test
 -->
 
 <!--
@@ -42,8 +44,8 @@ to do (not necessarily in order):
                 <nav>
                     <ol><li><a href="#secContact">Contact</a>
                             <ul>
-                                <li>Email</li>
-                                <li>Phone</li>
+                                <li><a href="#secEmail">Email</a></li>
+                                <li><a href="#secPhone">Phone</a></li>
                             </ul>
                         </li>
                         <li><a href="#secMusic">Music</a></li>
@@ -61,7 +63,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -74,43 +76,55 @@ to do (not necessarily in order):
 
                 <p>I welcome your contacts!</p>
 
-                <h3>Email</h3>
+                <section id="secEmail">
 
-                <nav>
-                    <ul>
-                        <li><a href="mailto:vanmeule@roadrunner.com">vanmeule@roadrunner.com</a> checked often</li>
-                        <li><a href="mailto:Andre.vanMeulebrouck@gmail.com">Andre.vanMeulebrouck@gmail.com</a> more reliable</li>
-                    </ul>
-                </nav>
+                    <h3>Email</h3>
 
-                <p>There is a way to send text messages to email addresses.  
-                    <a href="https://www.google.com/search?q=send+text+message+to+email+address&rlz=1C1DIEZ_enUS827US827&oq=send+text+message+to+email+address&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDc2NDhqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8"
-                    target="_blank">Here's a description of how to do it.</a></p>
+                    <nav>
+                        <ul>
+                            <li><a href="mailto:vanmeule@roadrunner.com">vanmeule@roadrunner.com</a> checked often</li>
+                            <li><a href="mailto:Andre.vanMeulebrouck@gmail.com">Andre.vanMeulebrouck@gmail.com</a> more reliable</li>
+                        </ul>
+                    </nav>
 
-                <h3>Phone</h3>
+                    <p>There is a way to send text messages to email addresses.  
+                        <a href="https://www.google.com/search?q=send+text+message+to+email+address&rlz=1C1DIEZ_enUS827US827&oq=send+text+message+to+email+address&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDc2NDhqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8"
+                        target="_blank">Here's a description of how to do it.</a></p>
 
-                <p>For those that like phones, my (landline) phone number is (805) 499-3694.  If you get voice mail, please do leave a message.  I will get back to you.</p>
-                
-                <p>Note:  my home phone is 
-                    <strong><em>not</em></strong> capable of receiving text messages; 
-                    and attempts to text to it will not be informed of this fact!</p>
-                
-                <p>In other words:  if you <em>attempt</em> to text me:</p>
+                </section>
 
-                <ol>
-                    <li>I won't get your intended text.</li>
-                    <li>I won't know that I missed your intended text.</li>
-                    <li>You won't know that I missed your intended text.</li>
-                </ol>
+                <section id="secPhone">
 
-                <p>Incidentally, I don't like cell phones because I think cell phones cause cancer, 
-                    and give people a way to disturb you on their schedule rather than yours.</p>
+                    <h3>Phone</h3>
 
-                <p>Also, my landline gets so many "Spam Risk" callers (showing up in the caller ID) 
-                    that it's not worth the effort to attempt to answer the phone (even if we are in earshot!) 
-                    if we don't know who you are (and/or we were not expecting a call from you).</p>
+                    <p>For those that like phones, my (landline) phone number is (805) 499-3694.  If you get voice mail, please do leave a message.  I will get back to you.</p>
+                    
+                    <p>Note:  my home phone is 
+                        <strong><em>not</em></strong> capable of receiving text messages; 
+                        and attempts to text to it will not be informed of this fact!</p>
+                    
+                    <p>In other words:  if you <em>attempt</em> to text me:</p>
 
-                <p>I have a cell phone; but it's typically for emergency outgoing calls (and similar), and it is left turned off otherwise (to avoid radiation).</p>
+                    <ol>
+                        <li>I won't get your intended text.</li>
+                        <li>I won't know that I missed your intended text.</li>
+                        <li>You won't know that I missed your intended text.</li>
+                    </ol>
+
+                    <p>Incidentally, I don't like cell phones because I think cell phones cause cancer, 
+                        and give people a way to disturb you on their schedule rather than yours.</p>
+
+                    <p>Also, my landline gets so many "Spam Risk" callers (showing up in the caller ID) 
+                        that it's not worth the effort to attempt to answer the phone (even if we are in earshot!) 
+                        if we don't know who you are (and/or we were not expecting a call from you).</p>
+
+                    <p>(One observation about SPAM callers (BTW):  they <em>never</em> leave a message (because they aren't legitimate); 
+                        hence if the caller ID says "SPAM RISK" we deliberately let it go to voice mail.)
+                    </p>
+
+                    <p>I have a cell phone; but it's typically for emergency outgoing calls (and similar), and it is left turned off otherwise (to avoid electromagnetic radiation).</p>
+
+                </section>
 
                 <p>go to:</p>
                 <nav>
@@ -119,7 +133,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -141,7 +155,7 @@ to do (not necessarily in order):
                     <li>using computers and audio interfaces (for home studio recording)</li>
                 </ul>
 
-                <p>At the last Music Geeks (Zoom) meeting, the agenda was to resolve the latency issues discovered at the last meeting.</p>
+                <p>At the next-to-last Music Geeks (Zoom) meeting, the agenda was to resolve the latency issues discovered at the last meeting.</p>
                 <p>When I shared my screen running Dorico (music notation software), my machine became sluggish.</p>
                 <ul>
                     <li>Would a faster machine fix the problem?</li>
@@ -160,7 +174,14 @@ to do (not necessarily in order):
 
                 <p>I also found this link in YouTube: 
                     <a href="https://www.youtube.com/watch?v=9JvDRGtmzc8&pp=ygUWdXNpbmcgZG9yaWNvIHdpdGggem9vbQ%3D%3D" target="_blank">Using Dorico in Zoom</a>.
-                    Note:  this requires downloading a Zoom driver (which I haven't tried yet).
+                    Note:  this requires downloading a Zoom driver.
+                </p>
+
+                <p>At the last meeting, Dave and I were both able to share Dorico while doing playback; hence we have proof of concept for both Mac and Windows.</p>
+
+                <p>One caveat:  André was not able to see the Zoom Audio Device driver; but with his current settings optimized for music presentations, it still worked fine.  
+                    We will do more experimentation with this before opening the meeting up to a wider audience.  
+                    If the audience widens beyond what would make sense for a single meeting; we can apportion attendees to different weekly meetings to stager attendance.
                 </p>
 
                 <p>Right now we're doing 30 minute weekly Zoom meetings to resolve these issues; but going forward, we'll probably drop back to monthly meetings.</p>
@@ -178,7 +199,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -188,17 +209,41 @@ to do (not necessarily in order):
             <section id="secOrigami">
 
                 <h2>Origami</h2>
-                <p>This section is for origami, diagrams, links of interest, etc..</p>
+                <p>This section is for origami related topics; including diagrams, links of interest, etc..</p>
+
+                <p>
+                    <a href="https://origamiusa.org/pcoc2025" target="_blank">PCOC (Pacific Coast Origami Conference) 2025</a> is coming up this Fall (October 30 to 3 November).                    
+                </p>
+                <p>Here is my  
+                    <a href="https://www.flickr.com/photos/mmukhopadhyay/38197745616/in/album-72157689008091244/" target="_blank">gallery from PCOC 2017</a>.
+                </p>
                 <!-- <h3>General Origami</h3> -->
                 <h3>Pixel unit origami</h3>
 
-                <p>My next pixel unit origami class, entitled "Origami to the Max:  pixel units" will be posted soon on the Origami USA calendar.</p>
+                <p>I host a pixel unit origami zoom class via Origami USA entitled <em>Origami to the Max:  pixel units</em>.
+                    (The word <em>Max</em> in the name name is a pun on the (now deceased) inventor of pixel units Max Hulme.)
+                    This class takes place every first Thursday at 1 p.m. PST.
+                </p>
+                <p>The next pixel unit origami class will be posted soon on the Origami USA calendar.</p>
                 <p>Topics will include:</p>
                 <ul>
                     <li>the Uncle Sam hat</li>
                     <li>so-called <em>rhombic</em> pixel units</li>
                     <li>folding pixel units with reinforced sleeves (my own innovation)</li>
+                    <li>SVG + HTML 5 + CSS 3 for diagramming</li>
                 </ul>
+                <p>Lately, I have been experimenting with using SVG (scalable vector graphics) in conjunction with HTML 5 and CSS 3 to diagram origami.</p>
+                <p>
+                    Since you can include raster images in SVG, this allows photos of origami to be superimposed with vector graphics for diagramming. 
+                    You could even create vectors on top of an image, and then remove the image (thereby creating a vector facsimile of the raster image).
+                    One obvious advantage of vectors is that they scale in a lossless fashion.
+                </p>
+                <p>Here is an example; just enough to show promise for this approach.</p>
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="132" height="180" fill="lightgreen" />
+                    <line x1="0" y1="90" x2="17" y2="90" stroke="blue" stroke-width="3" stroke-dasharray="5,5" />
+                    <line x1="115" y1="90" x2="132" y2="90" stroke="blue" stroke-width="3" stroke-dasharray="5,5" />
+                </svg>
                 <p>go to:</p>
                 <nav>
                     <ul>
@@ -206,7 +251,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -224,7 +269,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -250,7 +295,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -261,6 +306,80 @@ to do (not necessarily in order):
 
                 <h2>Test</h2>
                 <p>This section is for testing content changes, and/or web lore (i.e. HTML + Javascript + CSS + XML, security, etc.).</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="7" class = "monthStyle">August 2026</th>
+                        </tr>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>  
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td class="markDate">28</td>
+                            <td class="markDate">29</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>                                                                                            
+                    </tbody>
+                </table>
+                <br>
                 <p>test:  textarea => XML => textarea</p>
                 <textarea id="txtClassmates">
 <xml>
@@ -314,7 +433,7 @@ to do (not necessarily in order):
                             <a href="#secToC">Table of Contents</a>
                         </li>
                         <li>
-                            <a href="#secHeader">Home</a>
+                            <a href="#">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -359,7 +478,7 @@ to do (not necessarily in order):
                         <a href="#secToC">Table of Contents</a>
                     </li>
                     <li>
-                        <a href="#secHeader">Home</a>
+                        <a href="#">Home</a>
                     </li>
                 </ul>
             </nav>

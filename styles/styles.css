@@ -3,10 +3,40 @@ body {
     font-size: 100%;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: right;
+    font-size: medium;
+    background-color: beige;
+}
+
+th {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    width:  75px;
+    text-align: center;
+    font-size: small;
+}
+
+.monthStyle {
+    font-size: large;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.markDate {
+    background-color: yellow;
+    color: black;
+}
+
 .cssFlexAcross {
     display: flex;
     flex-direction: row;
-    /* justify-content: left; */
 }
 
 .cssFlexDown {
@@ -23,4 +53,8 @@ figure {
 figcaption {
     align-content: center;
     padding: 1%;
+}
+
+.rightJustifiedText {
+    text-align: right;
 }
